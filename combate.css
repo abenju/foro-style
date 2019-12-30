@@ -1,0 +1,252 @@
+.MB3,
+.MB3 * {
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+.MB3 {
+  width: 520px;
+  margin: 20px auto;
+  padding: 20px 0;
+  background: url(https://i.postimg.cc/4XVhkNZj/concrete-fondo.jpg) #111;
+  font: 10px Merriweather;
+  color: #999;
+  position: relative;
+}
+.MB3 > br,
+.moMB3 > br,
+.teMB3 > br {display: none;}
+#MB301:checked ~ .ddMB3 .moMB3 {
+  margin-left: 0%;
+}
+#MB302:checked ~ .ddMB3 .moMB3 {
+  margin-left: -100%;
+}
+#MB303:checked ~ .ddMB3 .moMB3 {
+  margin-left: -200%;
+}
+#MB304:checked ~ .ddMB3 .moMB3 {
+  margin-left: -300%;
+}
+.MB3 > label {
+  position: absolute;
+  width: 30px;
+  height: 50px;
+  background-image: url(https://i.imgur.com/ZrTChVP.png);
+  background-size: 100% 100%;
+  filter: brightness(0.8);
+  z-index: 10;
+  right: -15px;
+  top: calc(50% - 25px);
+  transform: scale(0.8);
+  cursor: pointer;
+  margin: 0;
+}
+.MB3 #MB301:checked ~ label:nth-of-type(1),
+.MB3 #MB301:checked ~ label:nth-of-type(3),
+.MB3 #MB301:checked ~ label:nth-of-type(4),
+.MB3 #MB302:checked ~ label:nth-of-type(2),
+.MB3 #MB302:checked ~ label:nth-of-type(4),
+.MB3 #MB303:checked ~ label:nth-of-type(1),
+.MB3 #MB303:checked ~ label:nth-of-type(3),
+.MB3 #MB304:checked ~ label:nth-of-type(1),
+.MB3 #MB304:checked ~ label:nth-of-type(2),
+.MB3 #MB304:checked ~ label:nth-of-type(4),
+.MB3 input {
+  display: none;
+}
+.MB3 #MB302:checked ~ label:nth-of-type(1),
+.MB3 #MB303:checked ~ label:nth-of-type(2),
+.MB3 #MB304:checked ~ label:nth-of-type(3) {
+  background-image: url(https://i.imgur.com/cfZuDyK.png);
+  right: calc(100% - 15px);
+}
+.imMB3.m1,
+.imMB3.m2,
+.imMB3.m3,
+.imMB3.m4 {
+  opacity: 0;
+}
+
+.MB3 #MB301:checked ~ .imMB3.m1,
+.MB3 #MB302:checked ~ .imMB3.m2,
+.MB3 #MB303:checked ~ .imMB3.m3,
+.MB3 #MB304:checked ~ .imMB3.m4 {
+  opacity: 1;
+}
+.MB3 #MB302:checked ~ label:nth-of-type(1),
+.MB3 #MB303:checked ~ label:nth-of-type(2),
+.MB3 #MB304:checked ~ label:nth-of-type(3) {
+}
+
+.MB3 label:hover {
+  transform: scale(1);
+}
+.MB3 label:active {
+  transform: scale(0.8);
+}
+.ddMB3 {
+  position: relative;
+  overflow: hidden;
+}
+.moMB3 {
+  width: 400%;
+  letter-spacing: -5px;
+}
+
+.teMB3 {
+  width: 25%;
+  display: inline-block;
+  vertical-align: top;
+  letter-spacing: normal;
+  padding: 0 0 0 260px;
+}
+.teMB3.aa {
+  padding: 100px 0 100px 260px;
+}
+
+.nnMB3 {
+  position: absolute;
+  width: 240px;
+  text-align: center;
+  padding: 50px 0;
+  bottom: 40px;
+  left: -20px;
+  font: 15px/15px IM Fell English SC;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+  box-shadow: 6px 15px 5px -9px #000, inset 0 0 100px #000;
+}
+.nnMB3 b {
+  display: block;
+  font-size: 20px;
+}
+.imMB3 {
+  -webkit-mask-image: url(https://i.postimg.cc/wB8QDSpP/Manchon.png);
+  -webkit-mask-size: 100% 100%;
+  width: 220px;
+  position: absolute;
+  top: -40px;
+  left: 125px;
+  background-position: center;
+  background-size: cover;
+  bottom: -20px;
+}
+.teMB3 > span {
+  display: block;
+  background: #1119;
+  padding: 5px 7px;
+  margin: 4px 0;
+  font-size: 10px;
+}
+.teMB3 > strong {
+  background: transparent;
+  padding: 20px 0;
+  font: 20px IM Fell English SC;
+  text-shadow: 1px 1px 2px #000;
+  color: #fff;
+  position: relative;
+  margin-bottom: 20px;
+  display: block;
+}
+.teMB3 > strong::after {
+  content: "";
+  width: 50px;
+  border-top: 2px solid;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.teMB3.aa b {
+  color: #c3aa3e;
+  letter-spacing: 1px;
+  margin-right: 5px;
+  text-shadow: 1px 1px 2px #000;
+}
+.teMB3.bb div,
+.teMB3.dd div,
+.teMB3.cc div {
+  background: #1119;
+  padding-right: 10px;
+  max-height: 350px;
+  overflow: auto;
+  text-align: justify;
+  border: 20px solid transparent;
+}
+
+.teMB3.bb span{
+  font: 10px Merriweather;
+  letter-spacing: 1px;
+}
+
+.teMB3.bb span > b {
+  font: 20px IM Fell English SC;
+  margin: 15px 10px 5px 0px;
+  color: #c3aa3e;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.teMB3.dd > div > span > b {
+    font: 15px IM Fell English SC;
+  margin: 15px 10px 5px 0px;
+  color: #c3aa3e;
+  text-shadow: 1px 1px 2px #000;
+}
+.teMB3.dd > div > span:first-of-type{
+  margin-top: 15px;
+}
+
+.teMB3.dd > div > span {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+    padding-bottom: 20px;
+}
+.teMB3.dd > div > span > b {
+  position: absolute;
+  margin: 0;
+  top: -20px;
+  left: 0;
+}
+.teMB3.cc > div > i {
+  display: block;
+  position: relative;
+  margin: 5px;
+  background: #000;
+  height: 6px;
+  border-radius: 5px;
+}
+.teMB3.cc > div > span > b {
+  font: 30px IM Fell English SC;
+  float: right;
+  color: #c3aa3e;
+  text-shadow: 1px 1px 2px #000;
+}
+.teMB3.cc > div > span {
+  color: #999;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px #000;
+  display: flow-root;
+  font: 15px Merriweather;
+}
+.miMB3 {
+  display: block;
+  text-align: right;
+  color: #c3aa3e !important;
+  text-shadow: 1px 1px 2px #000;
+  font: 15px IM Fell English SC;
+  margin: 20px -10px -28px;
+  transition: 0.5s;
+  letter-spacing: 5px;
+}
+.miMB3:hover {
+  letter-spacing: 7px;
+}
+.MB3 div::-webkit-scrollbar {
+ width: 5px !important;
+ height: 5px !important;
+ background: #FFF6 !important;
+}
+.MB3 div::-webkit-scrollbar-thumb {
+ background: #FFF6 !important;
+}
