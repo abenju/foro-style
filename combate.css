@@ -27,6 +27,9 @@
 #MB304:checked ~ .ddMB3 .moMB3 {
   margin-left: -300%;
 }
+#MB305:checked ~ .ddMB3 .moMB3 {
+  margin-left: -400%;
+}
 .MB3 > label {
   position: absolute;
   width: 30px;
@@ -44,38 +47,49 @@
 .MB3 #MB301:checked ~ label:nth-of-type(1),
 .MB3 #MB301:checked ~ label:nth-of-type(3),
 .MB3 #MB301:checked ~ label:nth-of-type(4),
+.MB3 #MB301:checked ~ label:nth-of-type(5),
 .MB3 #MB302:checked ~ label:nth-of-type(2),
 .MB3 #MB302:checked ~ label:nth-of-type(4),
+.MB3 #MB302:checked ~ label:nth-of-type(5),
 .MB3 #MB303:checked ~ label:nth-of-type(1),
 .MB3 #MB303:checked ~ label:nth-of-type(3),
+.MB3 #MB303:checked ~ label:nth-of-type(5),
 .MB3 #MB304:checked ~ label:nth-of-type(1),
 .MB3 #MB304:checked ~ label:nth-of-type(2),
 .MB3 #MB304:checked ~ label:nth-of-type(4),
+.MB3 #MB305:checked ~ label:nth-of-type(1),
+.MB3 #MB305:checked ~ label:nth-of-type(2),
+.MB3 #MB305:checked ~ label:nth-of-type(3),
+.MB3 #MB305:checked ~ label:nth-of-type(5),
 .MB3 input {
   display: none;
 }
 .MB3 #MB302:checked ~ label:nth-of-type(1),
 .MB3 #MB303:checked ~ label:nth-of-type(2),
-.MB3 #MB304:checked ~ label:nth-of-type(3) {
+.MB3 #MB304:checked ~ label:nth-of-type(3),
+.MB3 #MB305:checked ~ label:nth-of-type(4){
   background-image: url(https://i.imgur.com/cfZuDyK.png);
   right: calc(100% - 15px);
 }
 .imMB3.m1,
 .imMB3.m2,
 .imMB3.m3,
-.imMB3.m4 {
+.imMB3.m4,
+.imMB3.m5 {
   opacity: 0;
 }
 
 .MB3 #MB301:checked ~ .imMB3.m1,
 .MB3 #MB302:checked ~ .imMB3.m2,
 .MB3 #MB303:checked ~ .imMB3.m3,
-.MB3 #MB304:checked ~ .imMB3.m4 {
+.MB3 #MB304:checked ~ .imMB3.m4,
+.MB3 #MB305:checked ~ .imMB3.m5 {
   opacity: 1;
 }
 .MB3 #MB302:checked ~ label:nth-of-type(1),
 .MB3 #MB303:checked ~ label:nth-of-type(2),
-.MB3 #MB304:checked ~ label:nth-of-type(3) {
+.MB3 #MB304:checked ~ label:nth-of-type(3),
+.MB3 #MB305:checked ~ label:nth-of-type(4) {
 }
 
 .MB3 label:hover {
@@ -89,12 +103,12 @@
   overflow: hidden;
 }
 .moMB3 {
-  width: 400%;
+  width: 500%;
   letter-spacing: -5px;
 }
 
 .teMB3 {
-  width: 25%;
+  width: 20%;
   display: inline-block;
   vertical-align: top;
   letter-spacing: normal;
@@ -165,7 +179,8 @@
 }
 .teMB3.bb div,
 .teMB3.dd div,
-.teMB3.cc div {
+.teMB3.cc div,
+.teMB3.ee div{
   background: #1119;
   padding-right: 10px;
   max-height: 350px;
@@ -186,7 +201,8 @@
   text-shadow: 1px 1px 2px #000;
 }
 
-.teMB3.dd > div > span > b {
+.teMB3.dd > div > span > b,
+.teMB3.ee > div > span > b{
     font: 15px IM Fell English SC;
   margin: 15px 10px 5px 0px;
   color: #c3aa3e;
