@@ -266,3 +266,30 @@
 .MB3 div::-webkit-scrollbar-thumb {
  background: #FFF6 !important;
 }
+#MB401:checked ~ .ddMB3 .moMB3 { 
+  margin-left: 0%;
+} 
+#MB402:checked ~ .ddMB3 .moMB3 { 
+  margin-left: -100%;
+} 
+#MB403:checked ~ .ddMB3 .moMB3 { 
+  margin-left: -200%;
+} 
+.MB3 #MB401:checked ~ label:nth-of-type(1), .MB3 #MB401:checked ~ label:nth-of-type(3), .MB3 #MB402:checked ~ label:nth-of-type(2), .MB3 #MB403:checked ~ label:nth-of-type(1), .MB3 #MB403:checked ~ label:nth-of-type(3) { 
+  display: none;
+} 
+.MB3 #MB402:checked ~ label:nth-of-type(1), .MB3 #MB403:checked ~ label:nth-of-type(2){ 
+  background-image: url(https://i.imgur.com/cfZuDyK.png); 
+  right: calc(100% - 15px); 
+}
+.MB3 #MB401:checked ~ .imMB3.m1, .MB3 #MB402:checked ~ .imMB3.m2, .MB3 #MB403:checked ~ .imMB3.m3 {
+  opacity:1;
+} 
+.teMB3.dd.conj { 
+ height: 500px; 
+ overflow: auto;
+} 
+.teMB3.ee.inv div { 
+  max-height: 414px;
+  margin-top: 20px; 
+}
