@@ -30,6 +30,9 @@
 #MB305:checked ~ .ddMB3 .moMB3 {
   margin-left: -400%;
 }
+.ddMB3{
+  height: 443px;
+}
 .MB3 > label {
   position: absolute;
   width: 30px;
